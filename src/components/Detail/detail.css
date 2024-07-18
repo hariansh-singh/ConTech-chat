@@ -1,5 +1,6 @@
 .detail {
     flex:1;
+    background: linear-gradient(135deg, #1a202c, #2d3748);
 
     .user{
         padding: 30px 29px;
