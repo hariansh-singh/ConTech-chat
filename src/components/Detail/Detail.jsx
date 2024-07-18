@@ -43,7 +43,7 @@ function Detail() {
                 <img src="https://images.pexels.com/photos/1229042/pexels-photo-1229042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                 <span>Cosmos_2024.png</span>
               </div>
-              <img src="./download.png" alt="" />
+              <img src="./download.png" alt="" className='icon'/>
             </div>
 
             <div className="photoItem">
@@ -52,34 +52,7 @@ function Detail() {
                 <img src="https://images.pexels.com/photos/1229042/pexels-photo-1229042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                 <span>Cosmos_2024.png</span>
               </div>
-              <img src="./download.png" alt="" />
-            </div>
-
-            <div className="photoItem">
-              <div className="photoDetail">
-
-                <img src="https://images.pexels.com/photos/1229042/pexels-photo-1229042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-                <span>Cosmos_2024.png</span>
-              </div>
-              <img src="./download.png" alt="" />
-            </div>
-
-            <div className="photoItem">
-              <div className="photoDetail">
-
-                <img src="https://images.pexels.com/photos/1229042/pexels-photo-1229042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-                <span>Cosmos_2024.png</span>
-              </div>
-              <img src="./download.png" alt="" />
-            </div>
-
-            <div className="photoItem">
-              <div className="photoDetail">
-
-                <img src="https://images.pexels.com/photos/1229042/pexels-photo-1229042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-                <span>Cosmos_2024.png</span>
-              </div>
-              <img src="./download.png" alt="" />
+              <img src="./download.png" alt="" className='icon'/>
             </div>
 
           </div>
@@ -93,6 +66,8 @@ function Detail() {
         </div>
 
         <button>Block User</button>
+
+        <button className='logout'>Logout</button>
 
       </div>
 

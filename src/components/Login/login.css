@@ -1,0 +1,113 @@
+.login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px; /* Increased gap for more space between containers */
+    background: linear-gradient(135deg, #1d2b64 0%, #f8cdda 100%);
+    font-family: 'Arial', sans-serif;
+
+    .item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        max-width: 400px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 40px;
+        border-radius: 12px; /* Slightly more rounded corners */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+        text-align: center;
+
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* More pronounced shadow for the avatar */
+            margin-bottom: 20px;
+            object-fit: cover;
+            border: 4px solid #f8cdda;
+        }
+
+        h1, h2 {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); /* More pronounced text shadow */
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ff6f61;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #f8cdda;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+
+            input {
+                padding: 15px;
+                width: 100%;
+                border: none;
+                outline: none;
+                background-color: rgba(17, 25, 40, 0.6);
+                color: white;
+                border-radius: 5px;
+                transition: background-color 0.3s, transform 0.3s;
+
+                &:focus {
+                    background-color: rgba(17, 25, 40, 0.8);
+                    transform: scale(1.05);
+                }
+            }
+
+            label {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                cursor: pointer;
+                text-decoration: underline;
+                color: white;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: #f8cdda;
+                }
+            }
+
+            button {
+                padding: 15px 30px;
+                border: none;
+                background-color: #f8cdda;
+                color: #1d2b64;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s, transform 0.3s;
+
+                &:hover {
+                    background-color: #ff6f61;
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+    .separator {
+        height: 80%;
+        width: 2px;
+        background-color: #dddddd35;
+    }
+}

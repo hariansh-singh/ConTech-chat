@@ -1,0 +1,77 @@
+.addUser {
+    width: 400px; /* Fixed width for a more structured appearance */
+    padding: 30px;
+    background-color: rgba(17, 25, 40, 0.9); /* Darker, more opaque background */
+    border-radius: 15px; /* More rounded corners */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+    backdrop-filter: blur(10px); /* Blur effect for background */
+    
+    form {
+        display: flex;
+        gap: 20px;
+        flex-direction: column; /* Stack input and button vertically */
+        
+        input {
+            padding: 15px; /* Slightly reduced padding for a neater look */
+            border-radius: 12px; /* Rounded corners for inputs */
+            border: 1px solid #1a73e8; /* Blue border for input fields */
+            outline: none;
+            background-color: #ffffff; /* White background for input */
+        }
+
+        button {
+            padding: 15px 25px; /* Adjusted padding for a better button size */
+            border-radius: 12px; /* Rounded corners */
+            background-color: #1a73e8; /* Main blue color */
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1558b0; /* Darker blue on hover */
+            transform: scale(1.05); /* Slightly enlarges button on hover */
+        }
+    }
+
+    .user {
+        margin-top: 30px; /* Reduced margin for a more compact layout */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .detail {
+            display: flex;
+            align-items: center;
+            gap: 15px; /* Reduced gap for a more cohesive look */
+
+            img {
+                width: 60px; /* Slightly larger image */
+                height: 60px;
+                border-radius: 50%;
+                border: 3px solid #1a73e8; /* Blue border around the image */
+                object-fit: cover;
+            }
+        }
+
+        button {
+            padding: 10px 20px; /* Adjusted padding for consistency */
+            border-radius: 12px; /* Rounded corners */
+            background-color: #1a73e8; /* Main blue color */
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1558b0; /* Darker blue on hover */
+            transform: scale(1.05); /* Slightly enlarges button on hover */
+        }
+    }
+}
