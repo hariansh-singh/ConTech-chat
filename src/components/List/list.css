@@ -1,5 +1,13 @@
 .list {
-    flex:1;
+    flex: 1;
     display: flex;
-    flex-direction: column  ;
+    flex-direction: column;
+    background-color: #1f2937; /* Dark background for a sleek look */
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Larger shadow for emphasis */
+    max-width: 600px;
+    margin: 20px auto; /* Centered horizontally with some top margin */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Light border for definition */
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
