@@ -1,4 +1,6 @@
 .chat {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('chat-bg.jpg'); */
+    background-image: url('chat-bg.jpg');
     flex: 2;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     border-right: 1px solid rgba(255, 255, 255, 0.1);
@@ -192,3 +194,4 @@
         }
     }
 }
+
