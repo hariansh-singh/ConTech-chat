@@ -10,7 +10,7 @@ const authMiddleware = require('../middleware/authMiddleware');
 const router = express.Router();
 
 // Sign up route
-router.post('/signup', signUp);
+// router.post('/signup', signUp);
 
 // Log in route
 router.post('/login', login);

@@ -3,7 +3,7 @@
 // import { toast } from 'react-toastify';
 // import axios from 'axios';
 
-// function Login({ onLogin }) { // Ensure `onLogin` is used here
+// function Login({ onLogin }) {
 //   const [avatar, setAvatar] = useState({ file: null, url: '' });
 
 //   const handleAvatar = (e) => {
@@ -52,7 +52,7 @@
 //         <form onSubmit={handleLogin}>
 //           <input type="email" placeholder='Email' name='email' />
 //           <input type="password" placeholder='Password' name='password' />
-//           <button type="submit">Sign In</button> {/* Ensure `type="submit"` */}
+//           <button type="submit">Sign In</button>
 //         </form>
 //       </div>
 
@@ -68,7 +68,7 @@
 //           <input type="text" placeholder='Username' name='username' />
 //           <input type="email" placeholder='Email' name='email' />
 //           <input type="password" placeholder='Password' name='password' />
-//           <button type="submit">Sign Up</button> {/* Ensure `type="submit"` */}
+//           <button type="submit">Sign Up</button>
 //         </form>
 //       </div>
 //     </div>
@@ -76,6 +76,7 @@
 // }
 
 // export default Login;
+
 
 import React, { useState } from 'react';
 import './login.css';
@@ -116,8 +117,20 @@ function Login({ onLogin }) {
     const email = e.target.email.value;
     const password = e.target.password.value;
 
+    const formData = new FormData();
+    formData.append('username', username);
+    formData.append('email', email);
+    formData.append('password', password);
+    if (avatar.file) {
+      formData.append('avatar', avatar.file);
+    }
+
     try {
-      await axios.post('http://localhost:5000/api/auth/signup', { username, email, password });
+      const response = await axios.post('http://localhost:5000/api/users/signup', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
+      });
       toast.success('Account created successfully!');
     } catch (error) {
       toast.error('Signup failed. Please try again.');
